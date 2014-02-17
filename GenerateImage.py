@@ -16,7 +16,7 @@ font = ImageFont.truetype("OpenSans-Regular.ttf", 16)
 
 
 #Fetch and format the text from a tweet
-text = TwitterTweetRequester_PRIVATE.requestTweets(search_term, 1)
+text = TwitterTweetRequester.requestTweets(search_term, 1)
 text = str(text).encode('ascii')
 drawable_text = text.splitlines()
 
